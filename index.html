@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amma Ke Laddu</title>
+    <meta name="description" content="Buy fresh, homemade laddu online. Variety of flavors including chocolate, coconut, and traditional. Fast delivery!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        body { font-family: 'Arial', sans-serif; background-color: #ffe4e1; }
+        .hero { background: #ff4500; /* Dark orange */ height: 400px; color: white; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero h1 { font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); color: #ffd700; /* Gold */ }
+        #products { background-color: #f4c430; /* Saffron yellow */ padding: 20px 0; }
+        .product-card .card-title { color: #0000ff; /* Blue text for titles */ }
+        .product-card .card-text { color: #333; /* Dark gray for descriptions */ }
+        #cart { background-color: #90ee90; /* Light green */ padding: 20px 0; }
+        #about { background-color: #dda0dd; /* Plum purple */ color: white; padding: 20px 0; }
+        #about h2 { color: white; }
+        #contact { background-color: #add8e6; /* Light blue */ padding: 20px 0; }
+        #contact h2 { color: #000; /* Black text for heading */ }
+        footer { background-color: #000000; /* Black */ color: #ffff00; /* Yellow text */ padding: 20px 0; text-align: center; }
+        .navbar { background-color: #dc143c !important; /* Crimson red */ }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Amma</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Amma Ke Laddu</h1>
+            <p>Laddu Delight. Fresh, authentic, and delivered to your door!</p>
+            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+     <!-- Products Section -->
+<section id="products" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Laddu Varieties</h2>
+        <div class="row">
+            <!-- Product 1 (Original) -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="c:\Users\HP\Downloads\Babul Gond Laddu In Jar.png" class="card-img-top" alt="Traditional Laddu">
+                    <div class="card-body">
+                        <h5 class="card-title">Traditional Laddu</h5>
+                        <p class="card-text">Classic besan and ghee laddu. $10 per kg.</p>
+                        <button class="btn btn-success add-to-cart" data-product="Traditional Laddu" data-price="10">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 (Original) -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="c:\Users\HP\Downloads\Sethaura Laddu In Jar.png" class="card-img-top" alt="Sethaura Laddu">
+                    <div class="card-body">
+                        <h5 class="card-title">Sethaura Laddu</h5>
+                        <p class="card-text">Dekight Sethaura laddu. $12 per kg.</p>
+                        <button class="btn btn-success add-to-cart" data-product="Sethaura Laddu" data-price="12">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 (Original) -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="c:\Users\HP\Downloads\Mung Meva Laddu Single.jpg" class="card-img-top" alt="Coconut Laddu">
+                    <div class="card-body">
+                        <h5 class="card-title">Mung Meva Laddu</h5>
+                        <p class="card-text">Tr0pical Meva Laddu. $11 per kg.</p>
+                        <button class="btn btn-success add-to-cart" data-product="Mung Meva Laddu" data-price="11">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- New Product 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="/to/yourpath/laddu-rose.jpg" class="card-img-top" alt="Rose Laddu">
+                    <div class="card-body">
+                        <h5 class="card-title">Rose Laddu</h5>
+                        <p class="card-text">Fragrant rose-flavored laddu with a floral twist. $13 per kg.</p>
+                        <button class="btn btn-success add-to-cart" data-product="Rose Laddu" data-price="13">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- New Product 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="path/to/your/laddu-pistachio.jpg" class="card-img-top" alt="Pistachio Laddu">
+                    <div class="card-body">
+                        <h5 class="card-title">Pistachio Laddu</h5>
+                        <p class="card-text">Nutty pistachio goodness in every bite. $14 per kg.</p>
+                        <button class="btn btn-success add-to-cart" data-product="Pistachio Laddu" data-price="14">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- New Product 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="path/to/your/laddu-cardamom.jpg" class="card-img-top" alt="Cardamom Laddu">
+                    <div class="card-body">
+                        <h5 class="card-title">Cardamom Laddu</h5>
+                        <p class="card-text">Spiced with aromatic cardamom for a traditional taste. $11 per kg.</p>
+                        <button class="btn btn-success add-to-cart" data-product="Cardamom Laddu" data-price="11">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more here as needed -->
+        </div>
+    </div>
+</section>
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Laddu Varieties</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="path/to/your/laddu-traditional.jpg" class="card-img-top" alt="Traditional Laddu">
+                        <div class="card-body">
+                            <h5 class="card-title">Traditional Laddu</h5>
+                            <p class="card-text">Classic besan and ghee laddu. $10 per kg.</p>
+                            <button class="btn btn-success add-to-cart" data-product="Traditional Laddu" data-price="10">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="path/to/your/laddu-chocolate.jpg" class="card-img-top" alt="Chocolate Laddu">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Laddu</h5>
+                            <p class="card-text">Rich chocolate-infused laddu. $12 per kg.</p>
+                            <button class="btn btn-success add-to-cart" data-product="Chocolate Laddu" data-price="12">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="path/to/your/laddu-coconut.jpg" class="card-img-top" alt="Coconut Laddu">
+                        <div class="card-body">
+                            <h5 class="card-title">Coconut Laddu</h5>
+                            <p class="card-text">Tropical coconut delight. $11 per kg.</p>
+                            <button class="btn btn-success add-to-cart" data-product="Coconut Laddu" data-price="11">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more products as needed, using all your images -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section (Hidden by default, shown via JS) -->
+    <section id="cart" class="py-5" style="display: none;">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <ul id="cart-items" class="list-group mb-3"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button class="btn btn-primary" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p>At Laddu Delight, we craft authentic Indian sweets using traditional recipes passed down through generations. Our laddu is made fresh daily with premium ingredients, ensuring every bite is a celebration of flavor. Based in [Bhadohi], we ship nationwide!</p>
+            <img src="path/to/your/about-image.jpg" alt="Our Kitchen" class="img-fluid rounded">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your Formspree ID -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Laddu Delight. All rights reserved. | Follow us on <a href="#" class="text-white">Instagram</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple Cart Functionality
+        let cart = [];
+        const cartCount = document.getElementById('cart-count');
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const product = button.dataset.product;
+                const price = parseFloat(button.dataset.price);
+                cart.push({ product, price });
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            cartCount.textContent = cart.length;
+            cartItems.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item d-flex justify-content-between';
+                li.textContent = `${item.product} - $${item.price}`;
+                cartItems.appendChild(li);
+                total += item.price;
+            });
+            cartTotal.textContent = total.toFixed(2);
+            document.getElementById('cart').style.display = cart.length > 0 ? 'block' : 'none';
+        }
+
+        function checkout() {
+            alert('Checkout functionality not implemented yet. Integrate with Stripe/PayPal for real payments.');
+        }
+    </script>
+</body>
+</html>
